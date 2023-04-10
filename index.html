@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>MTG Catalogue</title>
 </head>
 <body>
@@ -12,15 +13,19 @@
         <h3>Find which sites have the cards you need, for the lowest prices</h3>
     </header>
     <main>
-        <form action="/">
-            <label for="card-name-text-box">Enter the name of the card you are searching for: 
-                <input type="text" name="card-name-text-box">
-                <input type="submit">
+        <form action="/index.js" method="post">
+            <label for="card-name-input">Enter the name of the card you are searching for: 
+                <br>
+                <br>
+                <input type="text" name="card-name-input" id="card-name-input" value="" required placeholder="Enter card name here..." autofocus>
+                <input type="submit" value="Submit">
             </label>
         </form>
+        <div class="results"></div>
     </main>
     <footer>
         <p>Created by Alex Nazemi</p>
     </footer>
+    <script src="index.js"></script>
 </body>
 </html>
